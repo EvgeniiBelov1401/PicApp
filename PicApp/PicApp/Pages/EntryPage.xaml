@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:PicApp"
+            x:Class="PicApp.Pages.EntryPage"
+            NavigationPage.HasNavigationBar="False">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="stackLayout">
+        <Label x:Name="wrongPin" Text="Введите корректный Пин-Код..." TextColor="DarkSlateGray" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" IsVisible="false"></Label>
+        <Label Text="Введите пин-код" FontSize="Title" Padding="10,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+        <Entry x:Name="pinCode" HorizontalTextAlignment="Center"></Entry>
+        <Button x:Name="loginButton" Text="Открыть" Clicked="Login_Click" IsEnabled="True"/>
+    </StackLayout>
+</ContentPage>
